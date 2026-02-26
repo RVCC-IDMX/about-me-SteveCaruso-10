@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Comment */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "New Rocker";
+}
+h1 {
+    font-size:40pt;
+}
+
+body {
+    font-family: "Noto Serif";
+    background-color: #F5A301;
+    color:#323c4b;
+}
+
+header {
+    text-align:center;
+}
+#hero, footer {
+    text-align:center;
+    background-color: #75623b;
+    color:#FFFFFF;
+    padding:10px;
+    border:10px solid #3560a0;
+    border-radius:20px;
+}
+#hero img {
+    width:300px;
+    max-width:100%;
+}
