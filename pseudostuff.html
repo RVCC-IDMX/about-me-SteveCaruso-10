@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses & Pseudoelements</title>
+</head>
+<body>
+
+<ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+    <li>Fourth</li>
+    <li>Fifth</li>
+    <li>Sixth</li>
+    <li>Seventh</li>
+    <li>Eighth</li>
+</ol>
+
+<style>
+
+ol li:nth-child(n+3):nth-child(-n+6) {
+    color:red;
+}
+
+</style>
+    
+<p>In the drifting <a href="#">Republic of a Lone Rice Grain</a> orbiting somewhere beyond the jurisdiction of gravity, the political climate is famously unstable. The conservative starch bloc insists on maintaining the traditional oval constitution,</p><p>Arguing that any swelling from absorbed cosmic moisture would undermine the grain’s structural identity. Meanwhile, the progressive bran coalition campaigns for porous reforms, claiming the vacuum has marginalized the outer husk and demanding equal representation for every microscopic ridge.</p>
+
+<div id="button">Button</div>
+
+<style>
+
+#test {
+}
+p::first-letter {
+    background-image:radial-gradient(white, yellow);
+    font-size:47px;
+    display:block;
+    float:left;
+    margin-right:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border:9px double black;
+    box-shadow:5px 5px 5px rgba(0,0,0,.5);
+}
+p::first-line {
+    font-variant: small-caps;
+}
+
+
+a:link {
+    color:green;
+    text-decoration:none;
+}
+a:active {
+    color:purple;
+}
+a:hover {
+    text-decoration:underline;
+}
+
+#button {
+    border:2px solid black;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:5px 5px 5px rgba(0,0,0,.5);
+}
+#button:hover {
+    box-shadow:15px 15px 5px rgba(0,0,0,.5);
+    margin-left:-5px;
+    margin-top:-5px;
+}
+
+:target {
+    background-color:yellow;
+}
+
+</style>
+
+</body>
+</html>
