@@ -29,3 +29,22 @@ header {
     width:300px;
     max-width:100%;
 }
+
+#gallery {
+    border:10px solid #3560a0;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+#gallery img {
+    max-width:100%;
+}
+#gallery figure {
+    text-align:center;
+}
+#gallery hr {
+    border:none;
+    border-top:10px solid #3560a0;
+}
+#gallery h2 {
+    padding:10px;
+}
