@@ -48,3 +48,28 @@ header {
 #gallery h2 {
     padding:10px;
 }
+
+/* Hobbies */
+#hobbies {
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+@media (min-width: 960px) {
+
+    #gallery figure {
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    #gallery figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 125%;
+        margin-left: 1rem;
+    }
+
+}
