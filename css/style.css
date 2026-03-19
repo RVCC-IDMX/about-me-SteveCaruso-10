@@ -3,6 +3,7 @@
 /* Comment */
 h1, h2, h3, h4, h5, h6 {
     font-family: "New Rocker";
+    text-align:center;
 }
 h1 {
     font-size:40pt;
@@ -57,7 +58,28 @@ header {
     align-items:center;
 }
 
+/* Article */
+article div {
+    max-width:100%;
+    columns:20rem;
+    padding:2em;
+}
+article p:first-child::first-letter {
+    background-image:radial-gradient(white, yellow);
+    font-size:47px;
+    display:block;
+    float:left;
+    margin-right:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border:9px double black;
+    box-shadow:5px 5px 5px rgba(0,0,0,.5);
+}
+article p::first-line {
+    font-variant: small-caps;
+}
 
+/* Tablet size */
 @media (min-width: 960px) {
 
     #gallery figure {
@@ -70,6 +92,22 @@ header {
         align-items: center;
         font-size: 125%;
         margin-left: 1rem;
+    }
+
+}
+
+/* Desktop/laptop size */
+@media (min-width: 1200px) {
+ 
+    #gallery {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #gallery hr {
+        display:none;
+    }
+    #gallery h2 {
+        grid-column: 1/-1;
     }
 
 }
