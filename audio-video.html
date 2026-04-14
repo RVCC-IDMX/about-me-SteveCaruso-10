@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio, Video, & More</title>
+</head>
+<body>
+    
+<h1>Audio Tag</h1>
+
+<audio src="audio/t-rex.mp3.mp3" controls>
+    Upgrade your browser, dummy.
+</audio>
+
+<style>
+audio {
+    border:1px solid;
+    border-radius:30px;
+    background-color:red;
+}
+</style>
+
+<h1>Video Tag</h1>
+
+<video src="video/flower.webm" controls></video>
+
+<style>
+video {
+    border:3px solid red;
+    border-radius:300px;
+}
+</style>
+
+<h1>iframe Tags</h1>
+
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik">
+</iframe>
+
+<iframe 
+    src="https://www.youtube.com/embed/uYJQIKAVBw8?si=XJRztbWPLAVj7jt9" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+<style>
+    iframe, img {
+        border-radius:30px;
+        max-width:100%;
+        width:1000px;
+        display:block;
+        aspect-ratio: 16/9;
+        margin:0 auto;
+    }
+</style>
+
+</body>
+</html>
